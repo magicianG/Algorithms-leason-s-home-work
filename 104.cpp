@@ -1,4 +1,4 @@
-/*添加注释*/
+
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
