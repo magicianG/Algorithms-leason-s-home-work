@@ -1,3 +1,4 @@
+/*æ·»åŠ æ³¨é‡Š*/
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
@@ -18,9 +19,9 @@ srand(time(NULL));
 	time_t t1,t2;	struct tm *pt; 
 	time(&t1);pt=gmtime(&t1);
  	cout<<setfill('0');
-	cout<<"ÅÅĞò¿ªÊ¼Ê±¼ä:";
+	cout<<"æ’åºå¼€å§‹æ—¶é—´:";
 	cout<<setw(2)<<(pt->tm_hour+8)%24<<":"<<setw(2)<<pt->tm_min<<":"<<setw(2)<<pt->tm_sec<<endl;
-	cout<<"SelectionSortÅÅĞòÖĞ"<<flush;
+	cout<<"SelectionSortæ’åºä¸­"<<flush;
 	sort(sort1,sort1+N);
 
 	for(i=1;i<=N-1;i++){
@@ -29,10 +30,10 @@ srand(time(NULL));
 	//	Selection(sort,i);
 	//		select_sort(sort1,N);
 	}
-	cout<<endl<<"ÅÅĞò½áÊøÊ±¼ä:";
+	cout<<endl<<"æ’åºç»“æŸæ—¶é—´:";
 	time(&t2);pt=gmtime(&t2);
 	cout<<setw(2)<<(pt->tm_hour+8)%24<<":"<<setw(2)<<pt->tm_min<<":"<<setw(2)<<pt->tm_sec<<endl;
-	cout<<"ÅÅĞòºÄ·ÑÊ±¼ä="<<t2-t1<<endl;
+	cout<<"æ’åºè€—è´¹æ—¶é—´="<<t2-t1<<endl;
 	/*for(i=0;i<30;i++)
 	cout<<"\t"<<sort[i];*/
 	getch();
@@ -40,7 +41,7 @@ srand(time(NULL));
 }
 void Selection(int *a,int n)
 {
-				//n È¡10
+				//n å–10
 	int i;
 	int min=99999;
 	int flag;
@@ -67,10 +68,10 @@ void select_sort(short *a,int n)
     register int i,j,min,t;
     for(i=0;i<n-1;i++)
     {
-        min=i;//²éÕÒ×îĞ¡Öµ
+        min=i;//æŸ¥æ‰¾æœ€å°å€¼
         for(j=i+1;j<n;j++)
             if(a[min]>a[j])
-                min=j;//½»»»
+                min=j;//äº¤æ¢
         if(min!=i)
         {
             t=a[min];
